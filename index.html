@@ -64,35 +64,151 @@
          </section>
       </div>
       <hr>
-    
-      <h1> Ejercicio 4 </h1>
-      <main class="Contenedor__formulario">
-    <h2 class="Contenedor-formulario__titulo">Contacto</h2>
-    <form class="formulario-contacto">
-        <div class="formulario-contacto__grupo">
-            <label for="nombre" class="formulario-contacto__label">Nombre</label>
-            <input class="formulario-contacto__input" type="text" id="nombre" required>
-        </div>
+       <div class="contenedor__formulario">
+        <h2 class="contenedor-formulario__titulo">Formulario de Contacto</h2>
 
-        <div class="formulario-contacto__grupo">
-            <label for="apellidos" class="formulario-contacto__label">Apellidos</label>
-            <input class="formulario-contacto__input" type="text" id="apellidos" required>
-        </div>
+        <form class="formulario-contacto" action="#" method="post">
+            
+            <div class="formulario-contacto__grupo">
+                <label for="nombre" class="formulario-contacto__label">Nombre</label>
+                <input type="text" id="nombre" name="nombre" class="formulario-contacto__input" required>
+            </div>
 
-        <div class="formulario-contacto__grupo">
-            <label for="correo" class="formulario-contacto__label">Correo</label>
-            <input class="formulario-contacto__input" type="email" id="correo" required>
-        </div>
+            <div class="formulario-contacto__grupo">
+                <label for="apellido" class="formulario-contacto__label">Apellido</label>
+                <input type="text" id="apellido" name="apellido" class="formulario-contacto__input" required>
+            </div>
 
-        <div class="formulario-contacto__grupo">
-            <label for="celular" class="formulario-contacto__label">Celular</label>
-            <input class="formulario-contacto__input" type="tel" id="celular" required>
-        </div>
+            <div class="formulario-contacto__grupo">
+                <label for="email" class="formulario-contacto__label">Correo electrónico</label>
+                <input type="email" id="email" name="email" class="formulario-contacto__input" required>
+            </div>
+
+            <div class="formulario-contacto__grupo">
+                <label for="telefono" class="formulario-contacto__label">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" class="formulario-contacto__input">
+            </div>
+
+            <div class="formulario-contacto__grupo" style="flex-basis: 100%;">
+                <label for="mensaje" class="formulario-contacto__label">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" class="formulario-contacto__input" rows="5" required></textarea>
+            </div>
+
+            <div class="formulario-contacto__grupo formulario-contacto__grupo--enviar" style="flex-basis: 100%; display: flex; justify-content: center;">
+                <button type="submit" class="formulario-contacto__boton">Enviar</button>
+            </div>
+
+        </form>
+    </div>
+    <hr>
+    <h1> Ejercicio 5 </h1>
+      <section class="section--encabezado">
+          <span class="icono--encabezado">Pizza🍕</li>
+          <span class="titulo--encabezado"> La Mejor Pizza🍕</li>
+      </section> 
+      <hr>
+      <h1> Ejercicio 6 </h1>
+      <ul class="lista--tareas">
+        <li> Comprar Leche</li>
+        <li> Estudiar html y class</li>
+        <li> Entrenar baloncesto</li>
+        <li> Limpiar el Cuarto</li>
+      </ul>
+      <hr>
+      <h1> Ejercicio 7 </h1>
+         <div class="testimonial">
+             <img src="img/Avatra.jpg" alt="Foto de usuario" class="testimonial__avatar">
+
+             <div class=" testimonial__contenedor"> 
+                <p class="testimonial__texto">
+                     Este servicio ha sido increible. La atención fue única y especial.
+                </p>
+                <p class="testimonial__autor"> Julián Fernández</p>
+             </div>
+         </div>
+            <hr>
+           <h1> Ejercicio 8</h1>
+           <footer class="footer">
+            <div class="footer__contenedor">
+                <div class="footer__columna">
+                    <h4>Empresas</h4>
+                    <p>Refriexito S.A.S <br>Calida y servicio</p>
+                </div>
+
+                <div class="footer__columna">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#productos">Producytos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__columna">
+                    <h4>Contacto</h4>
+                    <p>Tel: +57 300 5002365 <br>Email: hola@refriexito.co</p>
+                    <div class="social">
+                        <a href="#" aria-label="Facebook">Fb</a>
+                        <a href="#" aria-label="Instagram">Ig</a>
+                        <a href="#" aria-label="WhatsApp">Wsp</a>
+                   </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <small> 2025 Refriexito - Todos los dereechos reservados</small>
+            </div>
+           </footer>
+           <hr>
+           <h1> Ejercicio 9 </h1>
+           <section class="precios">
+    <h2 class="precios__titulo">Planes y Precios</h2>
+    <div class="precios__contenedor">
         
-        <div class="formulario-contacto__grupo formulario-contacto__grupo--enviar">
-             <button type="submit" class="formulario-contacto__boton">Enviar</button>
+        <div class="precio__card">
+            <h3>Básico</h3>
+            <p class="precio">$10.000 / mes</p>
+            <ul>
+                <li>1 usuario</li>
+                <li>Soporte básico</li>
+                <li>Acceso limitado</li>
+            </ul>
+            <button>Comprar</button>
         </div>
-    </form>
-</main>
+
+        <div class="precio__card destacado">
+            <h3>Pro</h3>
+            <p class="precio">$35.000 / mes</p>
+            <ul>
+                <li>5 usuarios</li>
+                <li>Soporte prioritario</li>
+                <li>Acceso completo</li>
+            </ul>
+            <button>Comprar</button>
+        </div>
+
+        <div class="precio__card">
+            <h3>Premium</h3>
+            <p class="precio">$60.000 / mes</p>
+            <ul>
+                <li>Usuarios ilimitados</li>
+                <li>Soporte 24/7</li>
+                <li>Funcionalidades extra</li>
+            </ul>
+            <button>Comprar</button>
+        </div>
+
+    </div>
+ </section>
+    <hr>
+    <h1>Ejercicio 10</h1>
+    <aside class="sidebar">
+        <nav class="menu">
+           <a href="#">Inicio</a>
+           <a href="#">Servicio</a>
+           <a href="#">Productos</a>
+           <a href="#">Contacto</a>
+        </nav>
+    </aside>
 </body>
 </html>
